@@ -1,0 +1,175 @@
+:root {
+    --main-bg-color: #CF1020;
+    --main-text-color: #fff;
+    --body-bg-color: #404040;
+}
+@font-face {
+    font-family: 'Marvel';
+    src: url('./font/Marvel-Regular.woff2') format('woff2'),
+    url('./font/Marvel-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background: var(--main-bg-color);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    color: var(--main-text-color);
+    margin: 0;
+    font-family: 'Marvel', sans-serif;
+    text-transform: uppercase;
+}
+h1  {
+    border: 3px solid var(--main-text-color);
+    background: var(--main-bg-color);
+    font-size: 3rem;
+    /*letter-spacing: -1px;*/
+    padding: 12px 5px 0;
+    margin: 0;
+    display: inline-block;
+}
+.superhero {
+    display: flex;
+    height: 100vh; /* 1, 3 */
+    flex-direction: column;
+}
+
+.superhero-header,
+.superhero-footer {
+    height: calc(80px - 10px);
+    padding: 5px;
+    flex: none; /* 2 */
+}
+
+.superhero-body {
+    background: var(--body-bg-color);
+    display: flex;
+    flex: 1 0 auto; /* 2 */
+    flex-direction: column;
+    padding: 15px;
+}
+
+.superhero-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+}
+.superhero-content .team {
+    display: flex;
+    flex-wrap: wrap;
+}
+.superhero-content .search {
+    margin: 50px 0 5px 10px;
+    width: 100%;
+}
+.superhero-content .superhero-list {
+    display: flex;
+    flex: 1 1 150px;
+    flex-wrap: wrap;
+}
+.superhero-content .team .empty {
+    margin: 5px;
+    padding: 0;
+    width: calc(150px - 6px);
+    height: calc(150px - 6px);
+    border-radius: 4px;
+    border: 3px dashed #2b1c26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.superhero-content .team .empty p {
+    margin: 0 auto;
+}
+.superhero-content .team .hero,
+.superhero-content .superhero-list .hero {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: background-position 311ms ease,
+    border-top-color 100ms ease,
+    border-right-color 100ms ease,
+    border-left-color 100ms ease,
+    border-bottom-color 100ms ease;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    border: 5px solid transparent;
+}
+.superhero-content .superhero-list .hero {
+    flex: 1 1 100px;
+}
+.superhero-content .superhero-list .hero.onTeam {
+    border-color: yellow;
+}
+.superhero-content .superhero-list .hero.onTeam p {
+    transform: rotate(4deg);
+}
+
+.superhero-content .team .hero:hover {
+    background-position: 15% 35%;
+    border-color: var(--main-bg-color);
+}
+.superhero-content .superhero-list .hero:hover {
+    background-position: 45% 30%;
+    border-color: var(--main-bg-color);
+}
+
+.superhero-content .team .hero p,
+.superhero-content .superhero-list .hero p {
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Marvel', sans-serif;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: auto;
+    transform-origin: center;
+    transform: rotate(-4deg);
+}
+
+.superhero-content .superhero-list .hero p {
+    font-size: 0.8rem;
+}
+
+.superhero-nav {
+    order: -1;
+    padding: 1em;
+    border-radius: 3px;
+    background: rgba(147, 128, 108, 0.1);
+    max-width: calc(200px - 2em);
+}
+
+.superhero-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    letter-spacing: 1px;
+}
+.superhero-footer a {
+    color: var(--main-bg-color);
+}
+
+@media (min-width: 768px) {
+    .superhero-body {
+        flex-direction: row;
+    }
+    .superhero-content {
+        flex: 1;
+        padding: 0 15px;
+        margin: 0;
+    }
+    .superhero-nav {
+        flex: 0 0 12em;
+    }
+}
