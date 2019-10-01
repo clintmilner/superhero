@@ -1,4 +1,5 @@
 import React from 'react';
+import Statistics from "./components/Statistics";
 
 const API = `https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/all.json`;
 const TEAM_SIZE = 4;
@@ -22,7 +23,7 @@ export default class Superhero extends React.Component {
                 console.log(superheroJSON[311]);
                 const superheroList = superheroJSON
                     // .filter(({biography: {publisher = null}}) => (publisher && publisher.includes('Marvel'))) // let's only keep the Marvel superheroes for now
-                    .map(({name, images, id}) => ({name, images, id}));
+                    .map(({name, images, id, powerstats}) => ({name, images, id, powerstats}));
                 this.setState(() => ({superheroList}));
             })
             .catch((e) => console.error('ERROR: ', e));
@@ -93,6 +94,11 @@ export default class Superhero extends React.Component {
                                 : null
                             }
                         </div>
+                        {
+                            (teamList.length > 0)
+                            ? <Statistics team={teamList} size={TEAM_SIZE} />
+                            : null
+                        }
                         <div className="search">
                             <label htmlFor='search'>Filter by Name: </label>
                             <input name='search' id='search' type="text" value={search} onChange={this.handleChange} />
