@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f01269cd.chunk.css",
+    "main.js": "/static/js/main.12412efe.chunk.js",
+    "main.js.map": "/static/js/main.12412efe.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d6d12294.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d6d12294.js.map",
+    "static/js/2.a01cbe7c.chunk.js": "/static/js/2.a01cbe7c.chunk.js",
+    "static/js/2.a01cbe7c.chunk.js.map": "/static/js/2.a01cbe7c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cc49453fb1c3a661b8174fa54b443304.js": "/precache-manifest.cc49453fb1c3a661b8174fa54b443304.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f01269cd.chunk.css.map": "/static/css/main.f01269cd.chunk.css.map",
+    "static/media/Superhero.css": "/static/media/Marvel-Regular.ebaf3a36.woff2"
+  }
+}
