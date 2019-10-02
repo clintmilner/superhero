@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/superhero/static/css/main.72bab2a3.chunk.css",
+    "main.css": "/superhero/static/css/main.02898a2a.chunk.css",
     "main.js": "/superhero/static/js/main.82df874d.chunk.js",
     "main.js.map": "/superhero/static/js/main.82df874d.chunk.js.map",
     "runtime-main.js": "/superhero/static/js/runtime-main.b31fdd0c.js",
@@ -8,9 +8,8 @@
     "static/js/2.2f7ca8ef.chunk.js": "/superhero/static/js/2.2f7ca8ef.chunk.js",
     "static/js/2.2f7ca8ef.chunk.js.map": "/superhero/static/js/2.2f7ca8ef.chunk.js.map",
     "index.html": "/superhero/index.html",
-    "precache-manifest.0784528ee22c3d90b9c54dbef69ab966.js": "/superhero/precache-manifest.0784528ee22c3d90b9c54dbef69ab966.js",
+    "precache-manifest.bd95096f7b59c5f83927d138f234ad79.js": "/superhero/precache-manifest.bd95096f7b59c5f83927d138f234ad79.js",
     "service-worker.js": "/superhero/service-worker.js",
-    "static/css/main.72bab2a3.chunk.css.map": "/superhero/static/css/main.72bab2a3.chunk.css.map",
-    "static/media/Superhero.css": "/superhero/static/media/Marvel-Regular.ebaf3a36.woff2"
+    "static/css/main.02898a2a.chunk.css.map": "/superhero/static/css/main.02898a2a.chunk.css.map"
   }
 }
