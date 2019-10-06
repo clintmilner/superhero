@@ -120,8 +120,8 @@ export default class Superhero extends React.Component {
                     </div>
                     <nav className='superhero-nav'>
                         <ul>
-                            <li>Pick Team</li>
-                            <li>Team Stats</li>
+                            <li><button type='button' className="save-team">Save Team</button></li>
+                            <li><button type='button' className="clear-team">Clear Team</button></li>
                         </ul>
                     </nav>
                 </main>
