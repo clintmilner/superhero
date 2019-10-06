@@ -146,8 +146,7 @@ export default class Superhero extends React.Component {
                     </nav>
                 </main>
                 <footer className='superhero-footer'>
-                    <p>Created by Clint Milner - Source happily lives on <a href="https://github.com/clintmilner/superhero" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </p>
+                    <p>Created by Clint Milner - Source happily lives on <a href="https://github.com/clintmilner/superhero" target="_blank" rel="noopener noreferrer">GitHub</a></p>
                 </footer>
             </div>
         );
